@@ -12,5 +12,8 @@ if __name__ == "__main__":
      print("1. Add a task")
      print("2. View all tasks")
      print("3. Exit")
+     print("4. Quit")
      print("_________________________________________")
+
+     choice = input("Enter your choice: ")
 
