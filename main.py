@@ -1,5 +1,10 @@
 tasks = []
 
+def addTask():
+     task = input("Please enter a task: ")
+     tasks.append(task)
+     print(f"Task '{task}' added to the list. ")
+
 
 if __name__ == "__main__":
 
