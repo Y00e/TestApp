@@ -5,6 +5,22 @@ def addTask():
      tasks.append(task)
      print(f"Task '{task}' added to the list. ")
 
+def deleteTask():
+     listTask():
+     try:
+       taskToDelete = int(input("Enter the # to delete: "))
+       if taskToDelete >=0 and taskToDelete < len(tasks):
+          tasks.pop(taskToDelete)
+          print(f"Task #{taskToDelete} has been removed.")
+
+       else:
+            print(f" Task #{taskToDelete} was not found.")
+     except:
+        print("Invalid input.")
+
+
+
+
 
 if __name__ == "__main__":
 
@@ -25,7 +41,7 @@ if __name__ == "__main__":
      if( choice == "1"):
           addTask()
      elif(choice == "2"):
-          delete()
+          deleteTasks()
      elif(choice == "3"):
           listTasks()
      elif(choice == "4"):
