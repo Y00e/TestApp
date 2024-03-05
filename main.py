@@ -11,11 +11,11 @@ def listTasks():
      else:
         print("Current Tasks:")
         for index, task in enumerate(tasks):
-           print(f f"Task #{index}. {task} ")
+           print(f"Task #{index}. {task} ")
 
 
-def deleteTask():
-     listTask():
+def deleteTasks():
+     listTasks()
      try:
        taskToDelete = int(input("Enter the # to delete: "))
        if taskToDelete >=0 and taskToDelete < len(tasks):
@@ -23,39 +23,37 @@ def deleteTask():
           print(f"Task #{taskToDelete} has been removed.")
 
        else:
-            print(f" Task #{taskToDelete} was not found.")
+            print(f"Task #{taskToDelete} was not found.")
      except:
         print("Invalid input.")
 
 
 
-
-
 if __name__ == "__main__":
 
-     ### Create a loop to run the app
-     print("Welcome to the to do list app :")
-     while True:
-     print("\n")
-     print("Please select on of the following options")
-     print("_________________________________________")
-     print("1. Add a task")
-     print("2. View all tasks")
-     print("3. Exit")
-     print("4. Quit")
-     print("_________________________________________")
+    ### Create a loop to run the app
+    print("Welcome to the to do list app 😊")
+    while True:
+        print("\n")
+        print("Please select one of the following options")
+        print("_________________________________________")
+        print("1. Add a task")
+        print("2. View all tasks")
+        print("3. Exit")
+        print("4. Quit")
+        print("_________________________________________")
 
-     choice = input("Enter your choice: ")
+        choice = input("Enter your choice: ")
 
-     if( choice == "1"):
-          addTask()
-     elif(choice == "2"):
-          deleteTasks()
-     elif(choice == "3"):
-          listTasks()
-     elif(choice == "4"):
-          break
-     else:
-          print("Invalid input. Please try again.")
+        if(choice == "1"):
+            addTask()
+        elif(choice == "2"):
+            deleteTasks()
+        elif(choice == "3"):
+            listTasks()
+        elif(choice == "4"):
+            break
+        else:
+            print("Invalid input. Please try again.")
 
 print("Goodbye ")
