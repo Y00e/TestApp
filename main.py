@@ -32,14 +32,14 @@ def deleteTasks():
 if __name__ == "__main__":
 
     ### Create a loop to run the app
-    print("Welcome to the to do list app 😊")
+    print("Welcome to the to do list app :)")
     while True:
         print("\n")
         print("Please select one of the following options")
         print("_________________________________________")
         print("1. Add a task")
-        print("2. View all tasks")
-        print("3. Exit")
+        print("2. Delete a task")
+        print("3. List tasks")
         print("4. Quit")
         print("_________________________________________")
 
@@ -56,4 +56,4 @@ if __name__ == "__main__":
         else:
             print("Invalid input. Please try again.")
 
-print("Goodbye ")
+print("Goodbye! ")
