@@ -1,5 +1,6 @@
 tasks = []
 
+
 if __name__ == "__main__":
 
      ### Create a loop to run the app
@@ -17,13 +18,14 @@ if __name__ == "__main__":
      choice = input("Enter your choice: ")
 
      if( choice == "1"):
-
+          addTask()
      elif(choice == "2"):
-
+          delete()
      elif(choice == "3"):
-
+          listTasks()
      elif(choice == "4"):
-
+          break
      else:
           print("Invalid input. Please try again.")
 
+print("Goodbye ")
